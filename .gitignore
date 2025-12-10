@@ -1,10 +1,34 @@
+# Logs and analysis outputs
 analysis/
+
+# Large model checkpoints and training artifacts (keep SAE allowlist below)
 checkpoints/
-data/
-journal/
-openvla/
-Miniconda3-latest-Linux-x86_64.sh
-sae_finetuned/
 sae_hparam_logs/
-junk/
+
+# Data: ignore raw; allow manifests/configs/utils; allow residuals except pi0_libero
+data/*
+!data/manifests/
+!data/manifests/*.json
+!data/latent_steering/
+!data/latent_steering/layer12_pairs.json
+!data/utils/
+!data/utils/*.py
+# !data/residuals/
+# data/residuals/pi0_libero/
+# data/residuals/open_close_front_back_run
+# data/residuals/open_close_run
+
+# Third-party or heavyweight clones (kept local)
+openvla/
 src/LIBERO
+src/openpi/third_party/
+src/openpi/.git
+src/openpi/.gitmodules
+
+# Local installers / scratch
+Miniconda3-latest-Linux-x86_64.sh
+junk/
+
+# SAE checkpoint we want tracked
+sae_finetuned/*
+# !sae_finetuned/sae_pi0_layer12_finetuned.pt

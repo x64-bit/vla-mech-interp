@@ -1,0 +1,33 @@
+{
+  "pairs": [
+    {
+      "name": "open_drawer_main",
+      "positive_label": "open the top drawer of the cabinet",
+      "positive_path": "data/residuals/open_vs_close_slices/layer12/open the top drawer of the cabinet.pt",
+      "negative_label": "close the top drawer of the cabinet",
+      "negative_path": "data/residuals/open_vs_close_slices/layer12/close the top drawer of the cabinet.pt"
+    },
+    {
+      "name": "on_stove",
+      "positive_label": "turn on the stove",
+      "positive_path": "data/residuals/on_vs_off_slices/layer12/turn on the stove.pt",
+      "negative_label": "turn off the stove",
+      "negative_path": "data/residuals/on_vs_off_slices/layer12/turn off the stove.pt"
+    },
+    {
+      "name": "open_drawer_subset",
+      "positive_label": "open the top drawer of the cabinet",
+      "positive_path": "data/residuals/open_vs_close_front_back_slices/layer12/open the top drawer of the cabinet.pt",
+      "negative_label": "close the top drawer of the cabinet",
+      "negative_path": "data/residuals/open_vs_close_front_back_slices/layer12/close the top drawer of the cabinet.pt"
+    },
+    {
+      "name": "back_plate",
+      "positive_label": "put the black bowl at the back on the plate",
+      "positive_path": "data/residuals/back_vs_front_slices/layer12/put the black bowl at the back on the plate.pt",
+      "negative_label": "put the black bowl at the front on the plate",
+      "negative_path": "data/residuals/back_vs_front_slices/layer12/put the black bowl at the front on the plate.pt"
+    }
+  ]
+}
+
